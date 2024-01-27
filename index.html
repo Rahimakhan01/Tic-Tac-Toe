@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <h1 class="title">Tic-Tac-Toe!</h1>
+</header>
+
+<div class="container">
+    <div class="settings">
+        <label for="symbolSelect">Choose your symbol:</label>
+        <select id="symbolSelect">
+            <option value="X">X</option>
+            <option value="O">O</option>
+        </select>
+    </div>
+    <div class="game-container">
+        <div id="board" class="board">
+            <div class="cell" data-index="0"></div>
+            <div class="cell" data-index="1"></div>
+            <div class="cell" data-index="2"></div>
+            <div class="cell" data-index="3"></div>
+            <div class="cell" data-index="4"></div>
+            <div class="cell" data-index="5"></div>
+            <div class="cell" data-index="6"></div>
+            <div class="cell" data-index="7"></div>
+            <div class="cell" data-index="8"></div>
+        </div>
+        <div id="result" class="result"></div>
+        <button id="resetButton" class="reset-button">Reset Game</button>
+    </div>
+    <div class="point-table">
+        <h2>Point Table</h2>
+        <table>
+            <tr>
+                <th>Player</th>
+                <th>Points</th>
+            </tr>
+            <tr id="playerXRow">
+                <td>Player X</td>
+                <td id="playerXPoints">0</td>
+            </tr>
+            <tr id="playerORow">
+                <td>Player O</td>
+                <td id="playerOPoints">0</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<footer class="footer">
+    <p class="footer-text">© 2024 Tic Tac Toe Game</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
